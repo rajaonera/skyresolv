@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +45,7 @@
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
-                    <a href="#" class="flex items-center">
+                    <a href="#Hero" class="flex items-center scroll-smooth">
                         <img src="assets/img/Sky_Resolve_Logo_Clair-removebg-preview.png" alt="Logo Sky Resolve - Service client pour compagnies aériennes" class="h-10" loading="lazy">
                     </a>
                 </div>
@@ -53,13 +53,13 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <nav>
                         <ul class="flex space-x-8">
-                            <li><a href="#services" class="nav-link">Services</a></li>
-                            <li><a href="#features" class="nav-link">Fonctionnalités</a></li>
-                            <li><a href="#security" class="nav-link">Sécurité</a></li>
-                            <li><a href="#advantages" class="nav-link">Avantages</a></li>
-                            <li><a href="#contact" class="nav-link">Contact</a></li>
-                            <li><a href="#careers" class="nav-link">Nous rejoindre</a></li>
-                            <li><a href="#about" class="nav-link">About us</a></li>
+                            <li><a href="#services" class="nav-link scroll-smooth">Services</a></li>
+                            <li><a href="#features" class="nav-link scroll-smooth">Fonctionnalités</a></li>
+                            <li><a href="#security" class="nav-link scroll-smooth">Sécurité</a></li>
+                            <li><a href="#advantages" class="nav-link scroll-smooth">Avantages</a></li>
+                            <li><a href="#contact" class="nav-link scroll-smooth">Contact</a></li>
+                            <li><a href="#careers" class="nav-link scroll-smooth">Nous rejoindre</a></li>
+                            <li><a href="#about" class="nav-link scroll-smooth">à propos de nous</a></li>
                         </ul>
                     </nav>
                     <a href="#contact" class="btn-primary px-6 py-2 rounded-full font-semibold">Contactez-nous</a>
@@ -91,7 +91,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-primary text-white py-16 md:py-24">
+    <section  id="Hero" class="bg-primary text-white py-16 md:py-24">
         <div class="container mx-auto px-4">
           <div class="flex flex-col md:flex-row items-center gap-4">
             <!-- Texte -->
@@ -120,12 +120,7 @@
               <img src="assets/img/home_page-removebg-preview.png"
                    alt="Sky Resolve Services"
                    class="rounded-lg shadow-xl max-w-full h-auto hover:scale-105 transition-transform duration-700 ease-in-out">
-              <div class="mt-4 flex justify-center">
-                <a href="#contact" class="skew-btn px-8 py-3 bg-gray-200 text-primary font-bold text-lg inline-block transform -skew-x-12 hover:bg-gray-300 transition-all duration-300 hover:shadow-lg">
-                    <i class="fas fa-life-ring mr-2"></i>                
-                    <a href="#contact" class="skew-btn px-8 py-3 bg-gray-200 text-primary font-bold text-lg inline-block transform -skew-x-12 hover:bg-gray-300 transition-all duration-300 hover:shadow-lg">Customer support takes off</a>
-                </a>
-            </div>
+              
           </div>
         </div>
       </section>
@@ -259,6 +254,34 @@
         </div>
     </section>
 
+    <!-- Careers Section -->
+    <section id="careers" class="py-16 bg-light reveal">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Nous rejoindre</h2>
+                <p class="text-xl text-gray-600 mb-12">Rejoignez une équipe dynamique dédiée à l'excellence du service client aérien</p>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 md:p-12 text-left">
+                    <p class="text-gray-700 mb-6">Chez Sky Resolve, nous sommes constamment à la recherche de talents passionnés qui partagent notre vision d'un service client exceptionnel et innovant. Nous proposons des opportunités dans divers domaines  
+                        <span class="text-gray-700 font-bold">du support client à l'assistance virtuelle en passant par la gestion des réclamations et le chat en ligne </span>
+                     pour accompagner nos clients dans leur transformation digitale.</p>
+                    
+                    <p class="text-gray-700 mb-6">Travailler chez Sky Resolve, c'est évoluer dans un environnement bienveillant et stimulant où l'initiative et la créativité sont encouragées. Nous investissons dans la formation et le développement professionnel de nos collaborateurs, pour que chacun puisse s'épanouir et grandir dans son parcours de carrière.</p>
+                    
+                    <p class="text-gray-700 mb-8">Vous aurez l'opportunité de travailler avec des entreprises de premier plan, de contribuer à des projets à impact et de faire une réelle différence dans l'expérience client.</p>
+                    
+                    <div class="bg-light rounded-lg shadow-md p-6 mb-8 text-center hover:shadow-lg transition-shadow duration-300">
+                    <p class="text-primary font-bold text-lg mb-3"><i class="fas far fa-file"></i> Vous souhaitez nous rejoindre ?</p>
+                    <p class="text-gray-600 mb-4">Envoyez-nous votre candidature spontanée accompagnée de votre CV :</p>
+                    <a href="mailto:recrutement@skyresolve.com" class="inline-block btn-accent px-6 py-3 rounded-full font-bold transform hover:scale-105 transition-transform">
+                        <i class="fas fas fa-mail-bulk mr-2"></i> recrutement@skyresolve.com
+                    </a>
+                </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Contact Form -->
     <section id="contact" class="py-16 bg-primary text-white reveal">
         <div class="container mx-auto px-4">
@@ -306,6 +329,37 @@
             </div>
         </div>
     </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white reveal">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="assets/img/Sky_Resolve_Logo_Clair-removebg-preview.png" alt="Sky Resolve à Madagascar" class="w-full max-w-md mx-auto animate-float" loading="lazy">
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">À propos de Sky Resolve</h2>
+                    <p class="text-xl text-gray-600 mb-6 font-bold">L'expérience client aérienne, réinventée à Madagascar</p>
+                    
+                    <div class="space-y-4 text-gray-700">
+                        <p>Fondée en 2025 par un groupe de jeunes entrepreneurs malagasy visionnaires, Sky Resolve est une entreprise spécialisée dans le service client aérien.</p>
+                        
+                        <p>Si la société est récente, ses fondateurs cumulent plus de cinq années d'expérience dans la gestion de la relation client dans le secteur aérien. Leur objectif : <span class="font-semibold"> transformer chaque interaction entre les compagnies aériennes et leurs passagers en une expérience fluide, personnalisée et mémorable.</span></p>
+                        
+                        <p>Dès sa création, Sky Resolve s'est appuyée sur un écosystème solide de spécialistes dans chaque domaine clé <span class="font-semibold"> de l'ingénierie de processus à l'analyse de données, en passant par la formation, les outils technologiques et la supervision de la qualité.</span></p>
+                        
+                        <p>Ce qui distingue Sky Resolve, c'est son besoin constant d'innovation. L'entreprise investit en continu dans des outils digitaux, des méthodologies agiles et des programmes de formation sur mesure.</p>
+                        
+                        <p>Son ambition dépasse la simple externalisation : 
+                            <span class="font-semibold">Sky Resolve entend devenir un véritable tremplin commercial pour les compagnies aériennes.</span> </p>
+                        
+                        <p class="font-semibold text-primary"><i class="fas fas fa-location-arrow"></i> Basée à Antananarivo, Sky Resolve incarne une nouvelle génération d'entreprises malgaches, audacieuses, compétentes et tournées vers l'international.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     </main>
     <!-- Footer -->
@@ -314,7 +368,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <img src="assets/img/Sky_Resolve_Logo_Clair-removebg-preview.png" alt="Sky Resolve Logo" class="h-10 mb-4">
-                    <p class="text-gray-400">Experts en service client aérien depuis 2015. Nous transformons votre support client en avantage compétitif.</p>
+                    <p class="text-gray-400">Experts en service client aérien depuis 2025. Nous transformons votre support client en avantage compétitif.</p>
                 </div>
                 
                 <div>

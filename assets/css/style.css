@@ -2,6 +2,10 @@ body {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
+/* Smooth scrolling with offset */
+html {
+    scroll-behavior: smooth;
+}
 .h-10 { 
     height: 5.5rem !important;
 }
