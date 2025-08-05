@@ -282,53 +282,6 @@
             </div>
         </div>
     </section>
-    <!-- Contact Form -->
-    <section id="contact" class="py-16 bg-primary text-white reveal">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contactez-nous</h2>
-                
-                <form id="contact-form" action="https://formspree.io/f/contact@skyresolve.com" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <input type="hidden" name="_subject" id="form-subject" value="New contact from Sky Resolve website">
-                    <input type="hidden" name="_next" value="https://skyresolve.com/thank-you">
-                    <div>
-                        <label for="firstname" class="block mb-2">Prénom</label>
-                        <input type="text" id="firstname" name="firstname" required aria-required="true" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-accent" aria-label="Votre prénom">
-                    </div>
-                    
-                    <div>
-                        <label for="lastname" class="block mb-2">Nom</label>
-                        <input type="text" id="lastname" name="lastname" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-accent">
-                    </div>
-                    
-                    <div>
-                        <label for="company" class="block mb-2">Entreprise</label>
-                        <input type="text" id="company" name="company" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-accent">
-                    </div>
-                    
-                    <div>
-                        <label for="email" class="block mb-2">Email</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-accent">
-                    </div>
-                    
-                    <div class="md:col-span-2">
-                        <label for="message" class="block mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
-                    </div>
-                    
-                    <div class="md:col-span-2 text-center">
-                        <button type="submit" class="btn-primary px-8 py-3 rounded-full font-bold text-lg inline-block">Envoyer votre message</button>
-                    </div>
-                </form>
-                
-                <div id="form-success" class="hidden mt-6 p-4 bg-green-100 text-green-800 rounded-lg text-center">
-                    <i class="fas fa-check-circle text-3xl mb-2"></i>
-                    <p class="font-bold">Merci pour votre message !</p>
-                    <p>Nous vous contacterons rapidement.</p>
-                </div>
-            </div>
-        </div>
-    </section>
     
     <!-- About Section -->
     <section id="about" class="py-16 bg-white reveal">
@@ -356,6 +309,35 @@
                         
                         <p class="font-semibold text-primary"><i class="fas fas fa-location-arrow"></i> Basée à Antananarivo, Sky Resolve incarne une nouvelle génération d'entreprises malgaches, audacieuses, compétentes et tournées vers l'international.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contactez-nous</h2>
+                
+                <form id="contact-form" method="POST" action="https://formspree.io/f/movlkdld" class="max-w-2xl mx-auto">
+                    <div class="mb-6">
+                        <label for="email" class="block mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-accent">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary px-8 py-3 rounded-full font-bold text-lg inline-block">Envoyer votre message</button>
+                    </div>
+                </form>
+                
+                <div id="form-success" class="hidden mt-6 p-4 bg-green-100 text-green-800 rounded-lg text-center">
+                    Votre message a bien été envoyé ! Nous vous contacterons rapidement.
                 </div>
             </div>
         </div>
