@@ -137,39 +137,51 @@
       </section>
       
     <!-- Services Section -->
-    <section id="services" class="py-16 bg-light reveal">
+    <section  class="py-16 bg-light reveal">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Nos Services</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div id="services"  class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="service-card bg-white rounded-xl overflow-hidden shadow-md p-6">
-                    <div class="mb-6">
-                        <img src="assets/img/Email Image (home page).png" alt="Email Service" class="w-full h-auto rounded-lg">
+                <div class="service-card relative rounded-xl overflow-hidden shadow-md h-96 group">
+                    <img src="assets/img/Email Image (home page).png" alt="Email Service" class="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <div class="transform transition-all duration-500 group-hover:-translate-y-16">
+                            <h2  class="text-2xl font-bold text-white mb-2">Emailing</h2>
+                            <div class="service-content opacity-0 h-0 overflow-hidden group-hover:opacity-100 group-hover:h-auto transition-all duration-500 delay-200">
+                                <p class="text-gray-200 mb-4">Améliorez l'expérience passager avec notre solution d'emailing dédiée à la gestion des réclamations. Nous offrons des réponses rapides, personnalisées et conformes aux normes aériennes, avec un traitement efficace et transparent.</p>
+                                <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-block">En savoir plus</a>
+                            </div>
+                        </div>
                     </div>
-                    <h2 class="text-2xl font-bold text-primary mb-4">Emailing</h2>
-                    <p class="text-gray-700 mb-6">Améliorez l'expérience passager avec notre solution d'emailing dédiée à la gestion des réclamations. Nous offrons des réponses rapides, personnalisées et conformes aux normes aériennes, avec un traitement efficace et transparent.</p>
-                    <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-block">En savoir plus</a>
                 </div>
                 
                 <!-- Service 2 -->
-                <div class="service-card bg-white rounded-xl overflow-hidden shadow-md p-6">
-                    <div class="mb-6">
-                        <img src="assets/img/Chat image (home page).png" alt="Chat Service" class="w-full h-auto rounded-lg">
+                <div class="service-card relative rounded-xl overflow-hidden shadow-md h-96 group">
+                    <img src="assets/img/Chat image (home page).png" alt="Chat Service" class="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <div class="transform transition-all duration-500 group-hover:-translate-y-16">
+                            <h3 class="text-2xl font-bold text-white mb-2">Service de chat</h3>
+                            <div class="service-content opacity-0 h-0 overflow-hidden group-hover:opacity-100 group-hover:h-auto transition-all duration-500 delay-200">
+                                <p class="text-gray-200 mb-4">Offrez un support instantané avec notre service de chat en direct, conçu pour répondre aux besoins de vos passagers en temps réel. Notre équipe assure un accompagnement personnalisé, rapide et adapté aux standards du secteur aérien.</p>
+                                <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-block">En savoir plus</a>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">Service de chat</h3>
-                    <p class="text-gray-700 mb-6">Offrez un support instantané avec notre service de chat en direct, conçu pour répondre aux besoins de vos passagers en temps réel. Notre équipe assure un accompagnement personnalisé, rapide et adapté aux standards du secteur aérien.</p>
-                    <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-block">En savoir plus</a>
                 </div>
                 
                 <!-- Service 3 -->
-                <div class="service-card bg-white rounded-xl overflow-hidden shadow-md p-6">
-                    <div class="mb-6">
-                        <img src="assets/img/Virtual Assistant Image.png" alt="Virtual Assistant" class="w-full h-auto rounded-lg">
+                <div class="service-card relative rounded-xl overflow-hidden shadow-md h-96 group">
+                    <img src="assets/img/Virtual Assistant Image.png" alt="Virtual Assistant" class="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <div class="transform transition-all duration-500 group-hover:-translate-y-16">
+                            <h3 class="text-2xl font-bold text-white mb-2">Assistance virtuelle</h3>
+                            <div class="service-content opacity-0 h-0 overflow-hidden group-hover:opacity-100 group-hover:h-auto transition-all duration-500 delay-200">
+                                <p class="text-gray-200 mb-4">Optimisez votre productivité avec notre service d'assistance virtuelle, dédié à la gestion de vos tâches administratives et relationnelles. Nos assistants, flexibles et formés à vos besoins, vous permettent de vous concentrer sur votre cœur de métier.</p>
+                                <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-block">En savoir plus</a>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">Assistance virtuelle</h3>
-                    <p class="text-gray-700 mb-6">Optimisez votre productivité avec notre service d'assistance virtuelle, dédié à la gestion de vos tâches administratives et relationnelles. Nos assistants, flexibles et formés à vos besoins, vous permettent de vous concentrer sur votre cœur de métier.</p>
-                    <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-block">En savoir plus</a>
                 </div>
             </div>
         </div>
@@ -361,7 +373,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <img src="assets/img/Sky_Resolve_Logo_Clair-removebg-preview.png" alt="Sky Resolve Logo" class="h-10 mb-4">
-                    <p class="text-gray-400">Experts en service client aérien depuis 2025. Nous transformons votre support client en avantage compétitif.</p>
+                    <p class="text-gray-400">Experts en service client aérien. Nous transformons votre support client en avantage compétitif.</p>
                 </div>
                 
                 <div>
@@ -377,10 +389,10 @@
                 <div>
                     <h3 class="text-lg font-bold mb-4">Services</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-accent transition">Emailing</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-accent transition">Service de chat</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-accent transition">Assistance virtuelle</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-accent transition">Solutions sur mesure</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-accent transition">Emailing</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-accent transition">Service de chat</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-accent transition">Assistance virtuelle</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-accent transition">Solutions sur mesure</a></li>
                     </ul>
                 </div>
                 
@@ -389,16 +401,17 @@
                     <div class="flex space-x-4">
                         <a href="https://www.facebook.com/profile.php?id=61566715078978" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-gray-400 hover:text-accent transition text-xl transform hover:scale-110 duration-300"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.linkedin.com/company/skyresolve/?viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-400 hover:text-accent transition text-xl transform hover:scale-110 duration-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/company/skyresolve/?viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-400 hover:text-accent transition text-xl transform hover:scale-110 duration-300"><i class="fab fa-whatsapp"></i></a>
                     </div>
                     
                     <h3 class="text-lg font-bold mt-6 mb-4">Contact</h3>
                     <p class="text-gray-400">contact@skyresolve.com</p>
-                    <p class="text-gray-400">+33 1 23 45 67 89</p>
+                    <p class="text-gray-400"> +261 34 75 456 75</p>
                 </div>
             </div>
             
             <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
-                <p>&copy; 2025 Sky Resolve. Tous droits réservés.</p>
+                <p>&copy;  Sky Resolve. Tous droits réservés.</p>
                 <p class="mt-2">Sky Resolve respecte la réglementation sur la protection des données personnelles (RGPD - Europe / DCIA - Canada).</p>
             </div>
         </div>

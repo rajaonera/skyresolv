@@ -41,7 +41,7 @@ html {
 .btn-secondary:hover {
     background-color: #162066;
     transform: translateY(-2px);
-}
+    }
 .service-card {
     transition: all 0.3s ease;
 }
@@ -70,9 +70,14 @@ html {
     opacity: 0;
 }
 
+
 .service-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;
+}
+.service-card:hover .service-content {
+    opacity: 1;
+    transform: translateY(0);
 }
 .skew-btn {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
