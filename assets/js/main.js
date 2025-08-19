@@ -138,4 +138,79 @@ document.querySelectorAll('.service-card').forEach(card => {
       });
     });
   });
+          // Animation d'apparition au scroll avec Intersection Observer
+          const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+  
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+  
+        // Observer tous les éléments avec fade-in-up
+        document.querySelectorAll('.fade-in-up').forEach((el, index) => {
+            // Délai progressif pour les cartes
+            el.style.transitionDelay = `${index * 0.1}s`;
+            fadeInObserver.observe(el);
+        });
+  
+        // Amélioration du hover avec debounce pour éviter les animations trop rapides
+        document.querySelectorAll('.service-card').forEach(card => {
+            let hoverTimeout;
+            
+            card.addEventListener('mouseenter', () => {
+                clearTimeout(hoverTimeout);
+                card.classList.add('hovered');
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                hoverTimeout = setTimeout(() => {
+                    card.classList.remove('hovered');
+                }, 150); // Petit délai pour éviter les clignotements
+            });
+        });
+  
+        // Animation CSS additionnelle pour les éléments fade-in-up
+        const style = document.createElement('style');
+        style.textContent = `
+            .fade-in-up {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            }
+            
+            .fade-in-up.animate {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            .service-card.hovered .service-description {
+                transition-delay: 0.1s;
+            }
+            
+            /* Amélioration responsive */
+            @media (max-width: 768px) {
+                .service-description {
+                    opacity: 1;
+                    transform: translateY(0);
+                    max-height: none;
+                    transition-delay: 0s;
+                }
+                
+                .service-card {
+                    height: auto;
+                    min-height: 400px;
+                }
+                
+                .hover-indicator {
+                    display: none;
+                }
+            }
+        `;
+        document.head.appendChild(style);
   

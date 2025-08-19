@@ -37,7 +37,7 @@
 ">
 
     <link rel="stylesheet" href="assets/css/style.css" >
-</head>
+
 <body class="bg-white">
     <!-- Header -->
     <main>
@@ -135,58 +135,151 @@
           </div>
         </div>
       </section>
-      
-    <!-- Services Section -->
-    <section  class="py-16 bg-light reveal">
+       <!-- Services Section Améliorée -->
+    <section id="services" class="py-16 bg-light">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">Nos Services</h2>
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Nos Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Découvrez nos solutions expertes pour optimiser votre service client aérien
+                </p>
+            </div>
             
-            <div id="services"  class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="service-card relative rounded-xl overflow-hidden shadow-md h-96 group">
-                    <img src="assets/img/Email Image (home page).png" alt="Email Service" class="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-6">
-                        <div class="transform transition-all duration-500 group-hover:-translate-y-16">
-                            <h2  class="text-2xl font-bold text-white mb-2">Emailing</h2>
-                            <div class="service-content opacity-0 h-0 overflow-hidden group-hover:opacity-100 group-hover:h-auto transition-all duration-500 delay-200">
-                                <p class="text-gray-200 mb-4">Améliorez l'expérience passager avec notre solution d'emailing dédiée à la gestion des réclamations. Nous offrons des réponses rapides, personnalisées et conformes aux normes aériennes, avec un traitement efficace et transparent.</p>
-                                <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-block">En savoir plus</a>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <!-- Service 1 - Emailing -->
+                <div class="service-card relative rounded-2xl overflow-hidden shadow-lg h-96 group fade-in-up cursor-pointer">
+                    <img src="assets/img/Email Image (home page).png" 
+                         alt="Service d'emailing professionnel pour compagnies aériennes" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    
+                    <div class="service-overlay absolute inset-0 flex flex-col justify-end p-6">
+                        <!-- Indicateur de hover -->
+                        <div class="hover-indicator">
+                            <i class="fas fa-arrow-down text-accent"></i>
+                        </div>
+                        
+                        <div class="relative z-10">
+                            <h3 class="service-title text-2xl md:text-3xl font-bold text-white mb-3">
+                                <i class="fas fa-envelope mr-2 text-accent"></i>
+                                Emailing Professionnel
+                            </h3>
+                            
+                            <div class="service-description">
+                                <p class="text-gray-100 mb-4 text-sm md:text-base leading-relaxed">
+                                    Transformez la gestion de vos réclamations avec notre solution d'emailing dédiée. 
+                                    Nos experts fournissent des réponses rapides, personnalisées et conformes aux standards 
+                                    de l'aviation internationale.
+                                </p>
+                                <!-- <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-accent text-primary px-3 py-1 rounded-full text-xs font-semibold">
+                                        Réponse 24h
+                                    </span>
+                                    <span class="bg-accent text-primary px-3 py-1 rounded-full text-xs font-semibold">
+                                        Multilingue
+                                    </span>
+                                </div> -->
+                                <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-flex items-center hover:shadow-lg">
+                                    <i class="fas fa-paper-plane mr-2"></i>
+                                    En savoir plus
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Service 2 -->
-                <div class="service-card relative rounded-xl overflow-hidden shadow-md h-96 group">
-                    <img src="assets/img/Chat image (home page).png" alt="Chat Service" class="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-6">
-                        <div class="transform transition-all duration-500 group-hover:-translate-y-16">
-                            <h3 class="text-2xl font-bold text-white mb-2">Service de chat</h3>
-                            <div class="service-content opacity-0 h-0 overflow-hidden group-hover:opacity-100 group-hover:h-auto transition-all duration-500 delay-200">
-                                <p class="text-gray-200 mb-4">Offrez un support instantané avec notre service de chat en direct, conçu pour répondre aux besoins de vos passagers en temps réel. Notre équipe assure un accompagnement personnalisé, rapide et adapté aux standards du secteur aérien.</p>
-                                <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-block">En savoir plus</a>
+                <!-- Service 2 - Chat -->
+                <div class="service-card relative rounded-2xl overflow-hidden shadow-lg h-96 group fade-in-up cursor-pointer">
+                    <img src="assets/img/Chat image (home page).png" 
+                         alt="Service de chat en direct pour assistance voyageurs" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    
+                    <div class="service-overlay absolute inset-0 flex flex-col justify-end p-6">
+                        <div class="hover-indicator">
+                            <i class="fas fa-arrow-down text-accent"></i>
+                        </div>
+                        
+                        <div class="relative z-10">
+                            <h3 class="service-title text-2xl md:text-3xl font-bold text-white mb-3">
+                                <i class="fas fa-comments mr-2 text-accent"></i>
+                                Chat en Direct
+                            </h3>
+                            
+                            <div class="service-description">
+                                <p class="text-gray-100 mb-4 text-sm md:text-base leading-relaxed">
+                                    Offrez un support instantané avec notre service de chat professionnel. 
+                                    Notre équipe spécialisée assure un accompagnement personnalisé en temps réel, 
+                                    adapté aux exigences du transport aérien.
+                                </p>
+                                <!-- <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-accent text-primary px-3 py-1 rounded-full text-xs font-semibold">
+                                        Support 24/7
+                                    </span>
+                                    <span class="bg-accent text-primary px-3 py-1 rounded-full text-xs font-semibold">
+                                        Temps réel
+                                    </span>
+                                </div> -->
+                                <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-flex items-center hover:shadow-lg">
+                                    <i class="fas fa-rocket mr-2"></i>
+                                    En savoir plus
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Service 3 -->
-                <div class="service-card relative rounded-xl overflow-hidden shadow-md h-96 group">
-                    <img src="assets/img/Virtual Assistant Image.png" alt="Virtual Assistant" class="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-6">
-                        <div class="transform transition-all duration-500 group-hover:-translate-y-16">
-                            <h3 class="text-2xl font-bold text-white mb-2">Assistance virtuelle</h3>
-                            <div class="service-content opacity-0 h-0 overflow-hidden group-hover:opacity-100 group-hover:h-auto transition-all duration-500 delay-200">
-                                <p class="text-gray-200 mb-4">Optimisez votre productivité avec notre service d'assistance virtuelle, dédié à la gestion de vos tâches administratives et relationnelles. Nos assistants, flexibles et formés à vos besoins, vous permettent de vous concentrer sur votre cœur de métier.</p>
-                                <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-block">En savoir plus</a>
+                <!-- Service 3 - Assistance Virtuelle -->
+                <div class="service-card relative rounded-2xl overflow-hidden shadow-lg h-96 group fade-in-up cursor-pointer">
+                    <img src="assets/img/Virtual Assistant Image.png" 
+                         alt="Service d'assistance virtuelle pour compagnies aériennes" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    
+                    <div class="service-overlay absolute inset-0 flex flex-col justify-end p-6">
+                        <div class="hover-indicator">
+                            <i class="fas fa-arrow-down text-accent"></i>
+                        </div>
+                        
+                        <div class="relative z-10">
+                            <h3 class="service-title text-2xl md:text-3xl font-bold text-white mb-3">
+                                <i class="fas fa-robot mr-2 text-accent"></i>
+                                Assistance Virtuelle
+                            </h3>
+                            
+                            <div class="service-description">
+                                <p class="text-gray-100 mb-4 text-sm md:text-base leading-relaxed">
+                                    Maximisez votre efficacité avec notre service d'assistance virtuelle innovant. 
+                                    Nos assistants digitaux gèrent vos tâches administratives et relationnelles, 
+                                    vous permettant de vous concentrer sur votre activité principale.
+                                </p>
+                                <!-- <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-accent text-primary px-3 py-1 rounded-full text-xs font-semibold">
+                                        IA Avancée
+                                    </span>
+                                    <span class="bg-accent text-primary px-3 py-1 rounded-full text-xs font-semibold">
+                                        Sur mesure
+                                    </span>
+                                </div> -->
+                                <a href="#contact" class="btn-secondary px-6 py-2 rounded-full font-semibold inline-flex items-center hover:shadow-lg">
+                                    <i class="fas fa-cogs mr-2"></i>
+                                    En savoir plus
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Call to Action supplémentaire -->
+            <div class="text-center mt-12 fade-in-up">
+                <p class="text-lg text-gray-600 mb-6">
+                    Prêt à révolutionner votre service client ?
+                </p>
+                <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg inline-flex items-center hover:bg-opacity-90 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <i class="fas fa-phone mr-3"></i>
+                    Demander une consultation gratuite
+                </a>
+            </div>
         </div>
     </section>
-
     <!-- Features Section -->
     <section id="features" class="py-16 bg-white reveal">
         <div class="container mx-auto px-4">
@@ -419,5 +512,6 @@
 
 
     <script src="assets/js/main.js"></script>
+   
 </body>
 </html>

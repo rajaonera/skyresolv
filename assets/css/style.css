@@ -95,3 +95,307 @@ html {
 [data-aos] {
     transition: opacity 0.6s, transform 0.6s;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-primary { background-color: #1E2A78; }
+.text-primary { color: #1E2A78; }
+.bg-accent { background-color: #FFD700; }
+.text-accent { color: #FFD700; }
+.bg-light { background-color: #E6F0FF; }
+
+.btn-secondary {
+    background-color: #1E2A78;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+    background-color: #162066;
+    transform: translateY(-2px);
+}
+
+/* Nouvelle approche pour les cartes de services */
+.service-card {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Overlay avec meilleur contraste */
+.service-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.6) 40%,
+        rgba(0, 0, 0, 0.3) 70%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    transition: all 0.4s ease;
+}
+
+.service-card:hover .service-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.7) 50%,
+        rgba(0, 0, 0, 0.4) 80%,
+        rgba(0, 0, 0, 0.2) 100%
+    );
+}
+
+/* Contenu toujours visible avec animation douce */
+.service-title {
+    transform: translateY(0);
+    transition: all 0.4s ease;
+}
+
+.service-description {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease 0.1s;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.service-card:hover .service-description {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 200px;
+}
+
+.service-card:hover .service-title {
+    transform: translateY(-10px);
+}
+
+/* Indicateur visuel pour le hover */
+.hover-indicator {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 215, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .hover-indicator {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animation d'entrée */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive amélioré */
+@media (max-width: 768px) {
+    .service-description {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: none;
+        position: static;
+    }
+    
+    .service-card {
+        height: auto;
+        min-height: 350px;
+    }
+    
+    .service-overlay {
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.6) 60%,
+            rgba(0, 0, 0, 0.3) 100%
+        );
+    }
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-primary { background-color: #1E2A78; }
+.text-primary { color: #1E2A78; }
+.bg-accent { background-color: #FFD700; }
+.text-accent { color: #FFD700; }
+.bg-light { background-color: #E6F0FF; }
+
+.btn-secondary {
+    background-color: #1E2A78;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+    background-color: #162066;
+    transform: translateY(-2px);
+}
+
+/* Enhanced service cards approach */
+.service-card {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Enhanced overlay with blur effect */
+.service-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.75) 40%,
+        rgba(0, 0, 0, 0.5) 70%,
+        rgba(0, 0, 0, 0.2) 100%
+    );
+    backdrop-filter: blur(1px);
+    transition: all 0.4s ease;
+}
+
+.service-card:hover .service-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.8) 50%,
+        rgba(0, 0, 0, 0.6) 80%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
+    backdrop-filter: blur(2px);
+}
+
+/* Image blur effect on hover */
+.service-image {
+    transition: all 0.7s ease;
+    filter: brightness(0.8);
+}
+
+.service-card:hover .service-image {
+    filter: blur(3px) brightness(0.6);
+}
+
+/* Always visible content with smooth animations */
+.service-title {
+    transform: translateY(0);
+    transition: all 0.4s ease;
+}
+
+.service-description {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease 0.1s;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.service-card:hover .service-description {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 200px;
+}
+
+.service-card:hover .service-title {
+    transform: translateY(-10px);
+}
+
+/* Visual hover indicator */
+.hover-indicator {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 215, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .hover-indicator {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Text shadow for better readability */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.text-shadow-lg {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+.drop-shadow-lg {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+}
+
+/* Entry animation */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Improved responsive design */
+@media (max-width: 768px) {
+    .service-description {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: none;
+        position: static;
+    }
+    
+    .service-card {
+        height: auto;
+        min-height: 400px;
+    }
+    
+    .service-overlay {
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.6) 60%,
+            rgba(0, 0, 0, 0.3) 100%
+        );
+    }
+    
+    .hover-indicator {
+        display: none;
+    }
+}
